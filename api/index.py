@@ -42,10 +42,10 @@ def proxy_api():
           if k in data['result']:
             data['result'].pop(k, None)
         # Result-il developer tag add cheyyunnu
-        data['result']['Developer'] = '@Your_father_786k'
+        data['result']['Developer'] = '@fameneedsme'
 
       # Root level-ilum developer add cheyyunnu
-      data['developer'] = '@Your_father_786k'
+      data['developer'] = '@fameneedsme'
 
     return jsonify(data)
 
@@ -53,7 +53,7 @@ def proxy_api():
     return jsonify({
         'error': True,
         'message': str(e),
-        'developer': '@Your_father_786k',
+        'developer': '@fameneedsme',
     })
 
 
@@ -61,7 +61,7 @@ def proxy_api():
 def home():
   return jsonify({
       'status': 'Online',
-      'developer': '@Your_father_786k',
+      'developer': '@fameneedsme',
       'usage': '/api?types=telegram&key=lond&spell=123456789',
   })
 
